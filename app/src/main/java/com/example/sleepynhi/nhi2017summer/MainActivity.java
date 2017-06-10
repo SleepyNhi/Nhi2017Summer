@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         tv_demo = (TextView) findViewById(R.id.activity_tool_demo);
         tv_work = (TextView) findViewById(R.id.activity_tool_work);
 
-
     }
 
     private void setListener() {

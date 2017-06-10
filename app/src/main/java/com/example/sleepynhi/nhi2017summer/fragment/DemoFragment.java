@@ -24,9 +24,9 @@ public class DemoFragment extends Fragment {
         contentList = new ArrayList<String>();
         contentList.add("ViewPager");
         contentList.add("ImageScaleType");
-        contentList.add("9patch");
-        contentList.add("9patch");
-        contentList.add("9patch");
+        contentList.add("a");
+        contentList.add("b");
+        contentList.add("c");
         contentList.add("9patch");
         contentList.add("9patch");
         contentList.add("9patch");
@@ -58,7 +58,7 @@ public class DemoFragment extends Fragment {
         listView = (ListView)view.findViewById(R.id.fragment_demo_lv);
         ListNormalAdapter adapter = new ListNormalAdapter(this.getContext(),contentList);
         listView.setAdapter(adapter);
-
+       // listView.setOnClickListener();
         return view;
 
     }

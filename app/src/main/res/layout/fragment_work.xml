@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="hello_work_fragment"
+        android:text="@string/hello_work_fragment"
         android:gravity="center"
         android:textColor="@android:color/white"/>
 

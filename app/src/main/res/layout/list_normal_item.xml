@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/list_normal_item"
+        android:id="@+id/item_normal_tv"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@android:color/darker_gray"

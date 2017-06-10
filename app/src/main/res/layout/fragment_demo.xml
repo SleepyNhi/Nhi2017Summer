@@ -10,7 +10,8 @@
         android:layout_height="match_parent"
         android:textColor="@android:color/white"
         android:gravity="center"
-        android:text="hello_demo_fragment" />
+
+        />
 
     <ListView
         android:id="@+id/fragment_demo_lv"

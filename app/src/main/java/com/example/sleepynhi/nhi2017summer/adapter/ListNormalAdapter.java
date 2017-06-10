@@ -49,7 +49,7 @@ public class ListNormalAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         convertView = inflater.inflate(R.layout.list_normal_item, parent,false);
-        TextView tv = (TextView) convertView.findViewById(R.id.list_normal_item);
+        TextView tv = (TextView) convertView.findViewById(R.id.item_normal_tv);
         tv.setText(list.get(position));
         return tv;
     }
