@@ -13,15 +13,17 @@
         android:layout_height="55dp"
         android:background="@android:color/holo_blue_bright"
         android:layout_alignParentTop="true">
+
+
         <TextView
             android:onClick="Login"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/app_name"
             android:textColor="@android:color/white"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:gravity="center"
-            android:layout_centerInParent="true"></TextView>
+            android:layout_centerInParent="true"/>
 
         <Button
             android:layout_width="55dp"
@@ -30,6 +32,7 @@
             android:layout_marginRight="15dp"
             android:layout_alignParentRight="true"
             android:background="@drawable/bt_icon_bg"/>
+
         <Button
             android:text="T"
             android:textSize="24sp"
