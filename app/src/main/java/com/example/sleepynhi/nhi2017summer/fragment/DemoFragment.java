@@ -13,9 +13,12 @@ import android.widget.ListView;
 import android.widget.Switch;
 
 import com.example.sleepynhi.nhi2017summer.LaunchModeActivity;
+import com.example.sleepynhi.nhi2017summer.PatchActivity;
 import com.example.sleepynhi.nhi2017summer.R;
+import com.example.sleepynhi.nhi2017summer.ScaleTypeActivity;
 import com.example.sleepynhi.nhi2017summer.ViewPagerActivity;
 import com.example.sleepynhi.nhi2017summer.adapter.ListNormalAdapter;
+import com.example.sleepynhi.nhi2017summer.adapter.ScalePagerAdapter;
 
 import java.util.ArrayList;
 
@@ -31,10 +34,10 @@ public class DemoFragment extends Fragment {
         contentList = new ArrayList<String>();
         contentList.add("ViewPager");
         contentList.add("ImageScaleType");
-        contentList.add("a");
+        contentList.add("9patch");
         contentList.add("b");
         contentList.add("c");
-        contentList.add("9patch");
+        contentList.add("d");
         contentList.add("LaunchMode");
         contentList.add("9patch");
         contentList.add("9patch");
@@ -74,9 +77,18 @@ public class DemoFragment extends Fragment {
                         Intent intent = new Intent(getActivity(),ViewPagerActivity.class);
                         startActivity(intent);
                         break;
-                    case 6:
-                        Intent intent1 = new Intent(getActivity(), LaunchModeActivity.class);
+                    case 1:
+                        Intent intent1 = new Intent(getActivity(), ScaleTypeActivity.class);
                         startActivity(intent1);
+                        break;
+                    case 2:
+                        Intent intent2 = new Intent(getActivity(), PatchActivity.class);
+                        startActivity(intent2);
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(getActivity(), LaunchModeActivity.class);
+                        startActivity(intent6);
+                        break;
                     default:
                 }
             }
