@@ -22,7 +22,9 @@
             android:name=".LaunchModeActivity"
             android:launchMode="singleInstance" />
         <activity android:name=".ScaleTypeActivity" />
-        <activity android:name=".PatchActivity"></activity>
+        <activity android:name=".PatchActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".AdvanceListViewActivity"></activity>
     </application>
 
 </manifest>

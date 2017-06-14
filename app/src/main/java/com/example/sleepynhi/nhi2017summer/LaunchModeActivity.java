@@ -9,7 +9,7 @@ public class LaunchModeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_launch_mode);
+        setContentView(R.layout.activity_a);
         Toast.makeText(this,"onCreate",Toast.LENGTH_SHORT).show();
     }
 }

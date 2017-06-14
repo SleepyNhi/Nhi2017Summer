@@ -12,7 +12,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Switch;
 
+import com.example.sleepynhi.nhi2017summer.AdvanceListViewActivity;
 import com.example.sleepynhi.nhi2017summer.LaunchModeActivity;
+import com.example.sleepynhi.nhi2017summer.NotificationActivity;
 import com.example.sleepynhi.nhi2017summer.PatchActivity;
 import com.example.sleepynhi.nhi2017summer.R;
 import com.example.sleepynhi.nhi2017summer.ScaleTypeActivity;
@@ -35,8 +37,8 @@ public class DemoFragment extends Fragment {
         contentList.add("ViewPager");
         contentList.add("ImageScaleType");
         contentList.add("9patch");
-        contentList.add("b");
-        contentList.add("c");
+        contentList.add("Notification");
+        contentList.add("AdvanceListView");
         contentList.add("d");
         contentList.add("LaunchMode");
         contentList.add("9patch");
@@ -85,6 +87,17 @@ public class DemoFragment extends Fragment {
                         Intent intent2 = new Intent(getActivity(), PatchActivity.class);
                         startActivity(intent2);
                         break;
+                    case 3:
+                        Intent intent3 = new Intent(getActivity(), NotificationActivity.class);
+                        startActivity(intent3);
+                        break;
+                    case 4:
+                        Intent intent4 = new Intent(getActivity(), AdvanceListViewActivity.class);
+                        startActivity(intent4);
+                        break;
+
+
+
                     case 6:
                         Intent intent6 = new Intent(getActivity(), LaunchModeActivity.class);
                         startActivity(intent6);
