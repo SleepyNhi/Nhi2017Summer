@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sleepynhi.nhi2017summer.DialogActivity">
+
+    <RadioGroup
+        android:id="@+id/activity_dialog1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    <RadioButton
+        android:id="@+id/button_normal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="NormalDialog"/>
+    <RadioButton
+        android:id="@+id/button_list"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="ListDialog"/>
+    <RadioButton
+        android:id="@+id/button_singleChoice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SingleChoiceDialog"/>
+    <RadioButton
+        android:id="@+id/button_multiChoice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="MultiChoiceDialog"/>
+    <RadioButton
+        android:id="@+id/button_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="WaitingDialog"/>
+    <RadioButton
+        android:id="@+id/button_progress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="ProgressDialog"/>
+    <RadioButton
+        android:id="@+id/button_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="InputDialog"/>
+    <RadioButton
+        android:id="@+id/button_custom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CustomDialog"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="OK"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

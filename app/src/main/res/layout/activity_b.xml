@@ -6,39 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.sleepynhi.nhi2017summer.fragment.ActivityA">
 
-
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bar">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="A"
-            android:gravity="center"
-            android:textSize="100sp"
-            android:background="@android:color/darker_gray"
-            android:textColor="@android:color/white"/>
-
-    </RelativeLayout>
-
+        android:text="B"
+        android:gravity="center"
+        android:textSize="100sp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"/>
 
     <LinearLayout
-        android:id="@+id/bar"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
         android:gravity="center"
-        android:background="@android:color/black"
         android:layout_alignParentBottom="true"
-        android:weightSum="2">
+        android:layout_centerVertical="true"
+        android:background="@android:color/darker_gray">
 
         <Button
             android:id="@+id/buttonA"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="A" />
-
+            android:text="A"
+            android:layout_height="match_parent" />
         <Button
             android:id="@+id/buttonB"
             android:layout_width="wrap_content"
@@ -55,5 +44,4 @@
             android:text="D"
             android:layout_height="match_parent" />
     </LinearLayout>
-
 </RelativeLayout>

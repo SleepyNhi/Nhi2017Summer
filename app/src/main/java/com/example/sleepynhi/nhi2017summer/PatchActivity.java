@@ -8,14 +8,13 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class PatchActivity extends AppCompatActivity {
+public class PatchActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patch);
-        Toast.makeText(this,"onCreate",Toast.LENGTH_SHORT).show();
-
+        shortToast("onCreate");
     }
 
 }

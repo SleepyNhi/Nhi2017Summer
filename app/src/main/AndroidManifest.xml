@@ -3,6 +3,7 @@
     package="com.example.sleepynhi.nhi2017summer">
 
     <application
+        android:name=".NhiApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,12 +20,34 @@
         <activity android:name=".NewActivity" />
         <activity android:name=".ViewPagerActivity" />
         <activity
-            android:name=".LaunchModeActivity"
+            android:name=".fragment.ActivityA"
+            android:launchMode="standard" />
+        <activity
+            android:name=".fragment.ActivityB"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".fragment.ActivityC"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".fragment.ActivityD"
             android:launchMode="singleInstance" />
         <activity android:name=".ScaleTypeActivity" />
         <activity android:name=".PatchActivity" />
         <activity android:name=".NotificationActivity" />
-        <activity android:name=".AdvanceListViewActivity"></activity>
+        <activity android:name=".AdvanceListViewActivity" />
+        <activity android:name=".AdvanceViewPagerActivity" />
+        <activity android:name=".ResultActivity1" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".ResultActivity2" />
+        <activity android:name=".RadioGroupActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".RunnableHandlerActivity" />
+        <activity android:name=".AnimatorActivity" />
+        <activity android:name=".SharedPreferenceActivity" />
+        <activity android:name=".Gesture2Activity"></activity>
     </application>
 
 </manifest>

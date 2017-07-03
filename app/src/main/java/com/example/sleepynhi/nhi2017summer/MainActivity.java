@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sleepynhi.nhi2017summer.fragment.ActivityD;
 import com.example.sleepynhi.nhi2017summer.fragment.DemoFragment;
 import com.example.sleepynhi.nhi2017summer.fragment.WorkFragment;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         initialView();
         setListener();
     }
+
 
 
     private void initialView() {

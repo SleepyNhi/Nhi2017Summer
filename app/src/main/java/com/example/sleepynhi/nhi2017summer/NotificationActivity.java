@@ -16,29 +16,6 @@ import butterknife.OnClick;
 
 public class NotificationActivity extends BaseActivity {
 
-    private NotificationManager manager;
-    private int notifyId = 100;
-
-    @OnClick(R.id.activity_notification_small)
-    public void smallNotification(View v){
-        showToast("smallNotification");
-
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
-        mBuilder.setContentTitle("Title")
-                .setContentText("Text")
-                .setContentIntent(getDefaultIntent(Notification.FLAG_AUTO_CANCEL))
-                .setNumber(10)
-                .setTicker("Ticker")
-                .setWhen(System.currentTimeMillis())
-                .setPriority(Notification.PRIORITY_DEFAULT)
-                .setAutoCancel(true)
-                .setOngoing(false)
-                .setDefaults(Notification.DEFAULT_SOUND)
-                .setDefaults(Notification.DEFAULT_VIBRATE)
-                .setSmallIcon(R.mipmap.ic_launcher);
-        manager.notify(notifyId, mBuilder.build());
-    }
-
 
     private PendingIntent getDefaultIntent(int flags){
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 1, new Intent(), flags);
@@ -64,6 +41,6 @@ public class NotificationActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
         ButterKnife.bind(this);
-        manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+
     }
 }

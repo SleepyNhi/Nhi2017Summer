@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import com.example.sleepynhi.nhi2017summer.R;
+import com.example.sleepynhi.nhi2017summer.util.UtilLog;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -63,4 +65,35 @@ public class RedFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_red, container, false);
     }
 
+
+    @Override
+    public String toString() {
+        return super.toString();
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
 }

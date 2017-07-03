@@ -63,4 +63,34 @@ public class BlueFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_blue, container, false);
     }
 
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
 }

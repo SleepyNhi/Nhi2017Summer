@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+
 import com.example.sleepynhi.nhi2017summer.adapter.BaseViewPagerAdapter;
 import com.example.sleepynhi.nhi2017summer.fragment.BlueFragment;
 import com.example.sleepynhi.nhi2017summer.fragment.GreenFragment;
 import com.example.sleepynhi.nhi2017summer.fragment.RedFragment;
+import com.example.sleepynhi.nhi2017summer.util.UtilLog;
 
 import java.util.ArrayList;
 
@@ -23,15 +25,20 @@ public class ViewPagerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_pager);
+        setContentView(R.layout.activity_advance_view_pager);
         Toast.makeText(this,"onCreate",Toast.LENGTH_SHORT).show();
-        viewPager = (ViewPager)findViewById(R.id.activity_view_pager);
+        viewPager = (ViewPager)findViewById(R.id.activity_advance_view_pager);
         list.add(new RedFragment());
         list.add(new GreenFragment());
         list.add(new BlueFragment());
-        BaseViewPagerAdapter pagerAdapter = new BaseViewPagerAdapter(getSupportFragmentManager(),list);
+        BaseViewPagerAdapter pagerAdapter = new BaseViewPagerAdapter(this.getSupportFragmentManager(),list);
         viewPager.setAdapter(pagerAdapter);
-        viewPager.setCurrentItem(1);
+        viewPager.setCurrentItem(0);
+
+
+
+        UtilLog.d("Fragment,", "onCreate");
+
     }
 
     @Override
