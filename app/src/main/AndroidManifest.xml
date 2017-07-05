@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sleepynhi.nhi2017summer">
 
+    <!--
+    -  <provider
+        android:name=".content.Provider"
+        android:authorities="com.example.sleepynhi.nhi2017summer"
+        android:export="true"
+        />
+    -->
     <application
         android:name=".NhiApplication"
         android:allowBackup="true"
@@ -47,7 +54,10 @@
         <activity android:name=".RunnableHandlerActivity" />
         <activity android:name=".AnimatorActivity" />
         <activity android:name=".SharedPreferenceActivity" />
-        <activity android:name=".Gesture2Activity"></activity>
+        <activity android:name=".Gesture2Activity" />
+        <activity android:name=".SQLiteeActivity" />
+        <activity android:name=".ServiceActivity" />
+        <service android:name=".service.TestService" />
     </application>
 
 </manifest>

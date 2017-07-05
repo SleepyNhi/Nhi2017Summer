@@ -28,6 +28,7 @@ import com.example.sleepynhi.nhi2017summer.RadioGroupActivity;
 import com.example.sleepynhi.nhi2017summer.ResultActivity;
 import com.example.sleepynhi.nhi2017summer.RunnableHandlerActivity;
 import com.example.sleepynhi.nhi2017summer.ScaleTypeActivity;
+import com.example.sleepynhi.nhi2017summer.ServiceActivity;
 import com.example.sleepynhi.nhi2017summer.SharedPreferenceActivity;
 import com.example.sleepynhi.nhi2017summer.ViewPagerActivity;
 import com.example.sleepynhi.nhi2017summer.adapter.ListNormalAdapter;
@@ -62,7 +63,7 @@ public class DemoFragment extends Fragment {
         contentList.add("Animator");
         contentList.add("Gesture");
         contentList.add("SharedPreference");
-        contentList.add("9patch");
+        contentList.add("Service");
 
 
     }
@@ -162,6 +163,10 @@ public class DemoFragment extends Fragment {
                     case 16:
                         Intent intent16 = new Intent(getActivity(), SharedPreferenceActivity.class);
                         startActivity(intent16);
+                        break;
+                    case 17:
+                        Intent intent17 = new Intent(getActivity(), ServiceActivity.class);
+                        startActivity(intent17);
                         break;
                     default:
                 }
