@@ -1,6 +1,7 @@
 package com.example.sleepynhi.nhi2017summer;
 
 import android.content.Context;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +29,8 @@ public class AdvanceListViewAdapter extends BaseAdapter {
         this.list = list;
         inflater =  (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
+
+
     @Override
     public int getCount() {
         return list.size();
@@ -52,6 +55,7 @@ public class AdvanceListViewAdapter extends BaseAdapter {
             Log.d("ViewHolder", "getViewById");
             convertView = inflater.inflate(R.layout.activity_advance_list_item, parent,false);
             viewHolder = new ViewHolder();
+
             viewHolder.rl_odd = (RelativeLayout)convertView.findViewById(R.id.odd);
             viewHolder.rl_even = (RelativeLayout)convertView.findViewById(R.id.even);
             viewHolder.tv = (TextView)convertView.findViewById(R.id.activity_advance_list_item_tv);
@@ -91,9 +95,15 @@ public class AdvanceListViewAdapter extends BaseAdapter {
     }
 
     private class ViewHolder{
+        ViewPager vp;
         RelativeLayout rl_odd;
         RelativeLayout rl_even;
         TextView tv;
         RelativeLayout.LayoutParams lp;
     }
+
+
+
+
+
 }

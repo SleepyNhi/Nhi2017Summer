@@ -30,6 +30,7 @@ import com.example.sleepynhi.nhi2017summer.RunnableHandlerActivity;
 import com.example.sleepynhi.nhi2017summer.ScaleTypeActivity;
 import com.example.sleepynhi.nhi2017summer.ServiceActivity;
 import com.example.sleepynhi.nhi2017summer.SharedPreferenceActivity;
+import com.example.sleepynhi.nhi2017summer.TestAudioActivityActivity;
 import com.example.sleepynhi.nhi2017summer.ViewPagerActivity;
 import com.example.sleepynhi.nhi2017summer.adapter.ListNormalAdapter;
 import com.example.sleepynhi.nhi2017summer.audio.BaseBean;
@@ -64,6 +65,7 @@ public class DemoFragment extends Fragment {
         contentList.add("Gesture");
         contentList.add("SharedPreference");
         contentList.add("Service");
+        contentList.add("TestAudio");
 
 
     }
@@ -168,6 +170,14 @@ public class DemoFragment extends Fragment {
                         Intent intent17 = new Intent(getActivity(), ServiceActivity.class);
                         startActivity(intent17);
                         break;
+                    case 18:
+                        Intent intent18 = new Intent(getActivity(), TestAudioActivityActivity.class);
+                        startActivity(intent18);
+                        break;
+//                    case 19:
+//                        Intent intent19 = new Intent(getActivity(), AudioActivityActivity.class);
+//                        startActivity(intent19);
+//                        break;
                     default:
                 }
             }

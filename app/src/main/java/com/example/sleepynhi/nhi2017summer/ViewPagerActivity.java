@@ -16,7 +16,7 @@ import com.example.sleepynhi.nhi2017summer.util.UtilLog;
 
 import java.util.ArrayList;
 
-public class ViewPagerActivity extends AppCompatActivity {
+public class ViewPagerActivity extends BaseActivity {
 
 
     private ViewPager viewPager;
@@ -34,9 +34,6 @@ public class ViewPagerActivity extends AppCompatActivity {
         BaseViewPagerAdapter pagerAdapter = new BaseViewPagerAdapter(this.getSupportFragmentManager(),list);
         viewPager.setAdapter(pagerAdapter);
         viewPager.setCurrentItem(0);
-
-
-
         UtilLog.d("Fragment,", "onCreate");
 
     }

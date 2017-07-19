@@ -19,6 +19,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sleepynhi.nhi2017summer.Quiz5Activity;
 import com.example.sleepynhi.nhi2017summer.R;
 import com.example.sleepynhi.nhi2017summer.adapter.ViewFragmentStateAdapter;
 import com.example.sleepynhi.nhi2017summer.dialog.CustomDialog;
@@ -40,8 +41,18 @@ import butterknife.OnClick;
  */
 public class WorkFragment extends Fragment {
 
+
+
     public WorkFragment() {
 
+    }
+
+//    @BindView(R.id.button_submit1)
+//    Button submitbt;
+    @OnClick(R.id.button_submit1)
+    public void submitbt(View view){
+        Intent myIntent = new Intent(getContext(), Quiz5Activity.class);
+        WorkFragment.this.startActivity(myIntent);
     }
 
     @BindView(R.id.button_submit1)
@@ -82,7 +93,6 @@ public class WorkFragment extends Fragment {
 
 
     }
-
 
 
     @Override

@@ -22,7 +22,13 @@
         android:gravity="center"
         android:text="Start Service"
         android:layout_centerInParent="true"/>
-
-
+    <Button
+        android:layout_below="@+id/activity_service_bt"
+        android:id="@+id/activity_service_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:gravity="center"
+        android:text="Stop Service"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>

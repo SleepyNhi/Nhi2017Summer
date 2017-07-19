@@ -3,6 +3,7 @@ package com.example.sleepynhi.nhi2017summer.adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.view.LayoutInflater;
 
 import java.util.ArrayList;
 
@@ -32,4 +33,5 @@ public class BaseViewPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return list.size();
     }
+
 }

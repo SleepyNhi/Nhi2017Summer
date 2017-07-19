@@ -36,7 +36,7 @@
                 android:layout_height="55dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:text="Quiz3" />
+                android:text="Quiz4" />
 
             <Button
                 android:id="@+id/activity_work_quiz2"
@@ -44,7 +44,7 @@
                 android:layout_height="55dp"
                 android:layout_centerInParent="true"
                 android:layout_centerVertical="true"
-                android:text="Quiz2" />
+                android:text="Quiz3" />
 
             <Button
                 android:id="@+id/activity_work_quiz3"
@@ -52,7 +52,7 @@
                 android:layout_height="55dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:text="Quiz1" />
+                android:text="Quiz2" />
 
         </RelativeLayout>
 
